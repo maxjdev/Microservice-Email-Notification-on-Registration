@@ -11,3 +11,10 @@ spring:
     jpa:
         hibernate:
             ddl-auto: update
+    rabbitmq:
+        addresses: amqps://ttkzwpdg:b7myp5odzkn38x9D1rNSqlavKePi2FoR@fish.rmq.cloudamqp.com/ttkzwpdg
+
+broker:
+    queue:
+        email:
+            name: default.email
