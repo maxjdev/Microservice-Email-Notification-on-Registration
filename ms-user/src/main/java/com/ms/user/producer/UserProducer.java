@@ -22,7 +22,7 @@ public class UserProducer {
         emailDto.setUserId(model.getId());
         emailDto.setEmailTo(model.getEmail());
         emailDto.setSubject("Cadastro realizado com sucesso!");
-        emailDto.setText(model.getName() + ", seja bem vindo(a)! \nAgradecemos seu cadstro, aproveite agora a todos recursos da nossa plataforma!");
+        emailDto.setText(model.getName() + ", seja bem vindo(a)! \nAgradecemos seu cadstro, aproveite agora todos recursos da nossa plataforma!");
 
         template.convertAndSend("", routingKey, emailDto);
     }
