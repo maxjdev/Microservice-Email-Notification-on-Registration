@@ -12,7 +12,19 @@ spring:
         hibernate:
             ddl-auto: update
     rabbitmq:
-        addresses: amqps://ttkzwpdg:b7myp5odzkn38x9D1rNSqlavKePi2FoR@fish.rmq.cloudamqp.com/ttkzwpdg
+        addresses: **setAddress**
+    mail:
+        host: sandbox.smtp.mailtrap.io
+        port: 587
+        username: **setUsername**
+        password: **setPassword**
+        properties:
+            mail:
+                smtp:
+                    auth: true
+                    starttls:
+                        enable: true
+
 broker:
     queue:
         email:
